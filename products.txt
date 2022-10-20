@@ -1,0 +1,6 @@
+{
+  "id": 1,
+  "title": "Queso",
+  "price": 1250,
+  "thumbnail": "https://www.lacteoslatam.com/wp-content/uploads/2022/09/Estudio-de-la-transferencia-de-NaCl-en-el-queso-costeno-picado.jpg"
+}
