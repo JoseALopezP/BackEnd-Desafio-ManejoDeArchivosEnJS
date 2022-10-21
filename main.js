@@ -22,15 +22,25 @@ let product4 ={
 }
 methods = async() => {
     let container = await new Container('products.txt');
+    console.log(1);
     await container.save(product1);
+    console.log(2);
     await container.save(product2);
+    console.log(3);
     await container.save(product3);
+    console.log(4);
     await container.save(product4);
+    console.log(5);
     console.log(await container.getAll());
+    console.log(6);
     console.log(await container.getById(2));
+    console.log(7);
     await container.deleteById(2);
+    console.log(8);
     console.log(await container.getById(2));
+    console.log(9);
     await container.deleteAll();
+    console.log(10);
     console.log(await container.getAll());
 }
 

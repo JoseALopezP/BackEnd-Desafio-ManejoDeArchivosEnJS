@@ -10,6 +10,7 @@ class Container{
             if(fs.existsSync(this.file)){
                 let result = await this.getAll();
                 if(result.length > 0){
+                    console.log("primero");
                     let setId = result[result.length];
                     let newProduct ={
                         id: setId,
@@ -19,6 +20,7 @@ class Container{
                     await fs.promises.writeFile(this.file, JSON.stringify(result,null,2));
                     return setId;
                 }else{
+                    console.log("segundo");
                     let setId = 1;
                     let newProduct ={
                         id: setId,
@@ -29,7 +31,8 @@ class Container{
                     return setId;
                 }
             }else{
-                let newProduct={
+                    console.log("tercero");
+                    let newProduct={
                     id: 1,
                     ...product
                 }
