@@ -9,6 +9,7 @@ class Container{
         try{
             if(fs.existsSync(this.file)){
                 let result = await this.getAll();
+                
                 if(result.length > 0){
                     console.log("primero");
                     let setId = result[result.length];
